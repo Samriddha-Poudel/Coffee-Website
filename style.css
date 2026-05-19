@@ -111,6 +111,10 @@ font-weight:var(--font-weight-semibold);
     background:var(--secondary-color);
 }
 
+.nav-bar :where(#menu-close-button, #menu-open-btn){
+    display:none;
+}
+
 
 .hero-section{
     min-height:100vh;
@@ -165,14 +169,21 @@ font-family: "Miniver", serif;
     border-radius:var(--border-radius-medium);
     background:var(--secondary-color);
     font-weight:var(--font-weight-medium);
+    transition:0.3s ease;
 }
 
 
 
-.hero-section .hero-dtls .btn:hover{
+.hero-section .hero-dtls .btn:hover, .hero-section .hero-dtls .contact-us{
     color:var(--white-color); 
     border-color:var(--white-color);
     background:transparent;
+}
+
+.hero-section .hero-dtls .contact-us:hover{
+    color:var(--primary-color);
+    border-color:var(--secondary-color);
+    background:var(--secondary-color);
 }
 
 
@@ -180,7 +191,8 @@ font-family: "Miniver", serif;
     max-width:500px;
     width:100%;
     margin-right:20px;
-    flex-shrink:0;
+    flex-shrink:1;
+    
 }
 
 
@@ -188,4 +200,86 @@ font-family: "Miniver", serif;
     border-radius:var(--border-radius-circle);
     object-fit:cover;
     box-shadow:10px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+
+@media screen and (max-width:900px){
+
+
+    :root{
+--font-size-medium:1rem;
+--font-size-large:1.3rem;
+--font-size-xtralarge:1.5rem;
+--font-size-xxtralarge:1.9rem;
+
+
+    }
+
+    body.show-mbl-menu{
+  overflow:"hidden";
+    }
+
+    body.show-mbl-menu header:before{
+        content:"";
+        position:fixed;
+        left: 0;
+        top:0;
+        height:100%;
+        width:100%;
+        backdrop-filter:blur(5px);
+        background:rgba(0, 0, 0, 0.3);
+    }
+
+
+    .nav-bar :where(#menu-close-button, #menu-open-btn){
+        display: block;
+font-size:var(--font-size-large);
+    }
+
+    .nav-bar #menu-close-button{
+        position:absolute;
+        right:25px;
+        top:30px;
+    }
+
+
+    .nav-bar #menu-open-btn{
+        color:var(--white-color);
+    }
+
+    .nav-bar .nav-menu{
+        display:block;
+        position:fixed;
+        top:0;
+        left:-350px;
+        width:350px;
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding-top:80px;
+        background:var(--white-color);
+        transition: left 0.3s ease;
+    }
+
+    body.show-mbl-menu .nav-bar .nav-menu{
+        left:0;
+    }
+
+
+    .nav-bar .nav-menu .nav-link{
+        color:var(--dark-color);
+        display:block;
+        margin-top:17px;
+        font-size:var(--font-size-large);
+
+    }
+
+
+
+
+    
+
+    
 }
