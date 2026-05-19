@@ -7,4 +7,4 @@ document.body.classList.toggle("show-mbl-menu");
 });
 
 
-menuClsbtn.addEventListener("click", () => menuOpnbtn.click ());
+menuClsbtn.addEventListener("click", () => menuOpnbtn.click());

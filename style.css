@@ -55,6 +55,9 @@ button{
     background:none;
 }
 
+
+
+
 img{
     width:100%;
 }
@@ -200,6 +203,67 @@ font-family: "Miniver", serif;
     border-radius:var(--border-radius-circle);
     object-fit:cover;
     box-shadow:10px 10px 30px rgba(0, 0, 0, 0.4);
+    aspect-ratio:1/1;
+}
+
+
+body.show-mbl-menu{
+    overflow:hidden;
+}
+
+
+.about-section{
+    padding:110px 0;
+    background:var(--lightpink-color);
+
+}
+
+
+.about-section .section-cntn{
+    display: flex;
+    gap:50px;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+.about-section .about-img-wrapper .abt-img{
+width:400px;
+height:400px;
+object-fit:cover;
+border-radius:var(--border-radius-circle);
+
+}
+
+
+.section-title{
+    text-align:center;
+    padding:60px 0 60px;
+    text-transform:uppercase;
+    font-size:var(--font-size-xtralarge);
+}
+
+
+.section-title::after{
+    content:"";
+    width:50px;
+    height:5px;
+    display:block;
+    margin:10px auto 0;
+    border-radius:var(--border-radius-small);
+    background:var(--secondary-color);
+}
+
+
+.about-section .about-dtls .section-title{
+    padding:10px;
+}
+
+.about-section .about-dtls .txt{
+    line-height:28px;
+    margin:50px 0 30px;
+    text-align:center;
+    font-size:var(--font-size-medium);
 }
 
 
@@ -216,9 +280,7 @@ font-family: "Miniver", serif;
 
     }
 
-    body.show-mbl-menu{
-  overflow:"hidden";
-    }
+    
 
     body.show-mbl-menu header:before{
         content:"";
@@ -276,6 +338,32 @@ font-size:var(--font-size-large);
 
     }
 
+
+    .hero-section .section-cntn{
+        gap:30px;
+        text-align:center;
+        padding:30px 20px 20px;
+        flex-direction:column-reverse;
+        justify-content:center;
+    }
+
+.hero-section .hero-dtls .subtitle,
+.hero-section .hero-dtls .desc{
+max-width:100%;
+
+}
+
+.hero-section .hero-dtls .buttons{
+    justify-content:center;
+}
+
+
+
+
+.hero-section .hero-img-wrapper{
+    margin-right:0;
+    max-width:270px;
+}
 
 
 
