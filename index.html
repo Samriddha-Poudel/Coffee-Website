@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Hub</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -147,38 +148,42 @@
         <section class="testimonials-section ">
             <h2 class="section-title">Testimonials </h2>
                 <div class="section-cntn">
-                    <div class="slider-cntn">
+                    <div class="slider-cntn swiper">
                         <div class="slider-wrapper">
-                            <ul class="testimonials-list">
-                                <li class="testimonials">
+                            <ul class="testimonials-list swiper-wrapper">
+                                <li class="testimonials swiper-slide">
                                     <img src="imgs/images/user-1.jpg" alt="user" class="user-img">
                                     <h3 class="name">Shara Sharma</h3>
                                     <i class="feedback">"Loved the french roast .Percetly balanced and rich.
                                         Will oder again definitely."</i>
                                 </li>
-                                <li class="testimonials">
+                                <li class="testimonials swiper-slide">
                                     <img src="imgs/images/user-2.jpg" alt="user" class="user-img">
                                     <h3 class="name">Rohan Verma</h3>
                                     <i class="feedback">"Great espresso blend smooth and bold flavour . Fast shipping tool." </i>
                                 </li>
 
-                                <li class="testimonials">
+                                <li class="testimonials swiper-slide">
                                     <img src="imgs/images/user-3.jpg" alt="user" class="user-img">
                                     <h3 class="name">Ashwin Poudel</h3>
                                     <i class="feedback">"Fantastic mocha flavour. Fresh and armoatic .Qucik shipping!"</i>
                                 </li>
 
-                                <li class="testimonials">
+                                <li class="testimonials swiper-slide">
                                     <img src="imgs/images/user-4.jpg" alt="user" class="user-img">
                                     <h3 class="name">Priya Pokhrel</h3>
                                     <i class="feedback">"Excellent quality! Fresh beans and quick delivery.Highly recommended!"</i>
                                 </li>
-                                <li class="testimonials">
+                                <li class="testimonials swiper-slide">
                                     <img src="imgs/images/user-5.jpg" alt="user" class="user-img">
                                     <h3 class="name">Antony kumar</h3>
                                     <i class="feedback">"Best Coffee i have ever tried ! Smooth and flavourful. Must try!"</i>
                                 </li>
                             </ul>
+
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
@@ -189,6 +194,9 @@
     </main>
 
 
+
+
+<script  src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
 </body>
