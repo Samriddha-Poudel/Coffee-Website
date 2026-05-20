@@ -424,7 +424,75 @@ transition:0.3s ease;
 }
 
 
+.contact-section{
+    padding:50px 0 100px;
+    background:var(--lightpink-color);
+}
 
+.contact-section .section-content{
+display:flex;
+gap:48px;
+align-items:flex-start;
+justify-content:space-between;
+}
+
+
+.contact-section .contact-info-list .contact-info{
+display:flex;
+gap:20px;
+margin:20px 0 ;
+align-items:center;
+}
+
+
+.contact-section .contact-info-list .contact-info i{
+    font-size:var(--font-size-medium);
+}
+
+
+    .contact-section .contact-form  .form-input{
+width:100%;
+height:50px;
+padding:0 12px;
+outline:none;
+margin-bottom:20px;
+background:var(--white-color);
+border-radius:var(--border-radius-small);
+border:1px solid var(--mediumgray-color);
+    }
+
+
+    .contact-section .contact-form{
+        max-width:50%;
+    }
+
+    .contact-section .contact-form .form-input:focus{
+        border-color:var(--secondary-color);
+    }
+
+    .contact-section .contact-form textarea.form-input{
+        height:100px;
+        padding:14px;
+        resize:vertical;
+    }
+
+
+    .contact-section .contact-form .sumbit-btn{
+        margin-top:10px;
+        padding:10px 20px;
+        border:1px solid var(--primary-color);
+        color:var(--white-color);
+        font-size:var(--font-size-medium);
+        font-weight:var(--font-weight-medium);
+        background:var(--primary-color);
+        border-radius:var(--border-radius-medium);
+        transition:0.3s ease;
+    }
+
+    .contact-section .contact-form .sumbit-btn:hover{
+        color:var(--primary-color);
+        background:transparent;
+    }
 
     @media screen and (max-width:1024px){
 
@@ -518,7 +586,7 @@ transition:0.3s ease;
         }
 
     .hero-section .hero-dtls .subtitle,
-    .hero-section .hero-dtls .desc .about-section .about-dtls{
+    .hero-section .hero-dtls .desc .about-section .about-dtls, .contact-section .contact-form{
     max-width:100%;
 
     }
@@ -567,6 +635,11 @@ transition:0.3s ease;
     width:calc(100% / 2 - 35px);
 }
 
+
+.contact-section .section-content{
+    align-items:center;
+    flex-direction:column-reverse;
+}
         
     }
 
