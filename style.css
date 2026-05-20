@@ -335,6 +335,30 @@
     font-size:var(--font-size-medium);
     }
 
+    .testimonials-section{
+
+        padding:50px 0 50px;
+        background:var(--lightpink-color);
+    
+
+    }
+
+    .testimonials-section .testimonials{
+        display:flex;
+    }
+
+
+    .testimonials-section .testimonials .user-img{
+        width:180px;
+        height:180px;
+        object-fit:cover;
+        border-radius:var(--border-radius-circle);
+    }
+
+
+
+
+
 
     @media screen and (max-width:1024px){
 
