@@ -12,11 +12,14 @@ menuClsbtn.addEventListener("click", () => menuOpnbtn.click());
 
 const swiper= new Swiper('.slider-wrapper',{
     loop:true,
+    grabCursor:true,
     spaceBetween:27,
 
 
     pagination: {
 el: '.swiper-pagination',
+clickable:true,
+dynamicBullets:true,
     },
 
     navigation: {
