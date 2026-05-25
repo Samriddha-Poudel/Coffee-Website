@@ -8,5 +8,8 @@ This is a this static websiten build through HTML , CSS and JS . This is a food 
 - CSS: CSS is used in this website to style HTML elements and make the wepage interactive and make it responsive.
 - JS: JS is used in this website to make the mobile menu open and close also it is used for slideshowing the testimonials section.
 
+# Note:
+This is a demo static website .
+
 ## How to use :
 To use this website you just have to visit https://coffeehub-samriddha.netlify.app/ 
