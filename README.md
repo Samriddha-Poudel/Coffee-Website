@@ -12,4 +12,4 @@ This is a this static websiten build through HTML , CSS and JS . This is a food 
 This is a demo static website . This was mine starting project that i have deplyod my third project more specifically in beest i have deplyod all of mine project through netlify which i have sumbited and my free trail of netlify has been full of limit so my website is down in netlify so i have uploaded it from github pages so you can cehck it out from here .
 
 ## How to use :
-To use this website you just have to visit https://github.com/Samriddha-Poudel/Coffee-Website
+To use this website you just have to visit https://samriddha-poudel.github.io/Coffee-Website/ all set.
